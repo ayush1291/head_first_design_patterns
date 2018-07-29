@@ -1,0 +1,29 @@
+1. Identify the parts that vary and encapsulate them: ref-1.jpg
+2. Move the new operator part somewhere else : ref 2.jpg
+3. Simple pizza factory explained in diagram : ref 3.jpg
+
+4. Defining a factory method - 5.jpg
+
+5. Defining factory pattern - 6.jpg, 7.jpg
+
+6. The Factory Method Pattern deﬁ nes an interface
+for creating an object, but lets subclasses decide which
+class to instantiate. Factory Method lets a class defer
+instantiation to subclasses
+
+7. Any other methods implemented in the abstract Creator are written to
+operate on products produced by the factory method - 8.jpg
+
+8. There are many. By placing all my creation code in one
+object or method, I avoid duplication in my code and provide one
+place to perform maintenance. That also means clients depend
+only upon interfaces rather than the concrete classes required to
+instantiate objects. As I have learned in my studies, this allows me
+to program to an interface, not an implementation, and that makes
+my code more ﬂexible and extensible in the future.
+
+9. A very dependent pizza store - 9.jpg
+
+DP : Depend upon abstractions. Do not depend upon concrete classes. - similar to coding to interface nd not concrete classes - as we saw initially
+
+10. High level componenets like Pizza Store depend on abstractions now, not low level components 10.jpg - this follows DI principle
