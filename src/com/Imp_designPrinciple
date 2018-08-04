@@ -1,0 +1,35 @@
+design principle
+1. Principle of least knowledge (also k/a )
+Talk to immediate friends
+
+According to the principle, only those methods should be invoked which belong to
+1. object itself
+2. object passed as a parameter to method
+3. Component of the object
+4. any object that the method creates
+
+so,
+
+Class A {
+	
+	Object point3;
+	
+	void method(Object point2) {
+	
+		 point2.method() ///correct
+		 point3.method() //correct
+		 Object point4 = new Object();
+		 point4.method() //correct
+		 
+		 Object wrongWay = getMeAnObject();
+		 wrongWay.method() ///wrong
+	 
+	 
+    }
+}
+
+-----------------
+
+2. Null object pattern
+For eg. in Command pattern, we cab create a NULL object called NoCommand. This object wont perform anything....on execution of execute method.
+But reduces the need of checking null everytime a command object is accessed

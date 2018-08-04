@@ -1,0 +1,21 @@
+Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations
+
+Actually, allows us to decouple the requester of an action from the object that actually performs the action
+
+For achieving this, the "command object" encapsulates the receiver of the request and actions ---> will expose only one method "execute" that will call the actions / 
+other requests internally
+
+main -->
+
+
+client (user)   --> will have various receivers and command objects related to them. 
+Then the invoker, will hold these command objects 
+in a way, the client will never know how the command button actually does teh action
+
+
+-----------
+
+NoCommand Pattern (null object) : refer Imp_designPattern file pt. 2
+
+-----------
+We can directly write the code for "execute" in the command object. No need of a "receiver" explicitly : "Smart objects"

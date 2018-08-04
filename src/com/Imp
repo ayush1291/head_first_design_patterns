@@ -1,0 +1,5 @@
+adpater vs decorator
+adapter converts one interface to another, whereas decorator doesn't alter but adds responsibility
+
+----------
+
