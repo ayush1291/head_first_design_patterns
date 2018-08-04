@@ -1,5 +1,8 @@
 Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations
 
+If we have multiple objects performing same action like to prepare a meal....but every object has different process and methods...
+so, command interface gives us a common platform to perform the action....order book in resaturant is command interface and whatever is written are different objects
+
 Actually, allows us to decouple the requester of an action from the object that actually performs the action
 
 For achieving this, the "command object" encapsulates the receiver of the request and actions ---> will expose only one method "execute" that will call the actions / 
@@ -18,4 +21,25 @@ in a way, the client will never know how the command button actually does teh ac
 NoCommand Pattern (null object) : refer Imp_designPattern file pt. 2
 
 -----------
-We can directly write the code for "execute" in the command object. No need of a "receiver" explicitly : "Smart objects"
+We can directly write the code for "execute" in the command object. No need of a "receiver" explicitly : "Smart objects"(thread pools)
+If we have smart objects, then no decoupling is there btw invoker(command object) and reciever.
+eg. we tried to create smart objects for oracle driver loading, but then, within command we had to create and use the recieve, but can use factory for decouploing 
+
+
+Unrelated objects - having nth in common - waitress taking orders having nth in common - 1.jpg
+
+Command pattern explained with diagram - 2.jpg
+
+Command pattern with class diagram - 3.jpg
+
+In the situation where we did not create any off command, then party mode was an issue
+as on and off are two different things-- so cannot be treated same
+
+
+Take, for example, a spreadsheet application: we might want to implement
+our failure recovery by logging the actions on the spreadsheet rather than writing a copy
+of the spreadsheet to disk every time a change occurs. In more advanced applications,
+these techniques can be extended to apply to sets of operations in a transactional
+manner so that all of the operations complete, or none of them do
+
+eg. implement a queue which accepts input as command objects and we can create run time methodology and logs for every data

@@ -1,6 +1,6 @@
 package com.command.eg2.commands;
 
-import com.command.eg1.vendor.Fan;
+import com.command.eg2.vendor.Fan;
 
 public class FanLowCommand implements Command {
 	Fan fan;

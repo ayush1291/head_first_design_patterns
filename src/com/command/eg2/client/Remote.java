@@ -1,7 +1,7 @@
 package com.command.eg2.client;
 
-import com.command.eg1.commands.Command;
-import com.command.eg1.commands.NoCommand;
+import com.command.eg2.commands.Command;
+import com.command.eg2.commands.NoCommand;
 
 public class Remote {
 	Command[] onCommands = new Command[3];

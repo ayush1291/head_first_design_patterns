@@ -4,28 +4,24 @@ import com.command.eg1.commands.Command;
 import com.command.eg1.commands.NoCommand;
 
 public class Remote {
-	Command[] onCommands = new Command[3];
-	Command[] offCommands = new Command[3];
+	Command[] onCommands = new Command[4];
 	Command lastCommand;
+	
+	//Assinging with no commands
 	public Remote(){
-		for (int i=0; i<3; i++){
+		for (int i=0; i<onCommands.length; i++){
 			onCommands[i] = new NoCommand();
-			offCommands[i] = new NoCommand();
 		}
 		lastCommand = new NoCommand();
 	}
 	
-	public void setCommand(int i, Command onCommand, Command offCommand) {
+	public void setCommand(int i, Command onCommand) {
 		onCommands[i] = onCommand;
-		offCommands[i] = offCommand;
 	}
 	
 	public void onButtonPressed(int i){
 		onCommands[i].execute();
-	}
-	
-	public void offButtonPressed(int i){
-		offCommands[i].execute();
+		lastCommand=onCommands[i];
 	}
 		
 	public void undoButtonPressed(){

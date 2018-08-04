@@ -8,17 +8,19 @@ public class Fan {
 
 	public Fan() {
 		speed = OFF;
-
 	}
 
 	public void high() {
+		System.out.println("Running at high speed");
 		speed = HIGH;
 	}
 	public void low() {
+		System.out.println("Running at low speed");
 		speed = LOW;
 	}
 
 	public void off() {
+		System.out.println("Running at no speed");
 		speed = OFF;
 	}
 

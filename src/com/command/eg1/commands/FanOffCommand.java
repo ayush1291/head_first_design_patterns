@@ -28,5 +28,4 @@ public class FanOffCommand implements Command {
 			fan.off();
 		}
 	}
-
 }

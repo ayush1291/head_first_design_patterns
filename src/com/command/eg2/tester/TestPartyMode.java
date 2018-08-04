@@ -1,15 +1,15 @@
 package com.command.eg2.tester;
 
-import com.command.eg1.client.Remote;
-import com.command.eg1.commands.Command;
-import com.command.eg1.commands.FanHighCommand;
-import com.command.eg1.commands.FanLowCommand;
-import com.command.eg1.commands.FanOffCommand;
-import com.command.eg1.commands.LightOffCommand;
-import com.command.eg1.commands.LightOnCommand;
-import com.command.eg1.commands.MacroCommand;
-import com.command.eg1.vendor.Fan;
-import com.command.eg1.vendor.Light;
+import com.command.eg2.client.Remote;
+import com.command.eg2.commands.Command;
+import com.command.eg2.commands.FanHighCommand;
+import com.command.eg2.commands.FanLowCommand;
+import com.command.eg2.commands.FanOffCommand;
+import com.command.eg2.commands.MacroCommand;
+import com.command.eg2.vendor.Fan;
+import com.command.eg2.vendor.Light;
+import com.command.eg2.commands.LightOffCommand;
+import com.command.eg2.commands.LightOnCommand;
 
 public class TestPartyMode {
 
