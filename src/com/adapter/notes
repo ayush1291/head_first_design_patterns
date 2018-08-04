@@ -1,0 +1,45 @@
+1. Adapter pattern converts one interface to another
+ 
+(interface 1) a* >>>>>>>>>> @a (interface 2)
+(adapter) *A@
+
+will join to form >>>>  a**A@@a
+
+
+----------Terms--------
+1. Target interface 
+2. Adapter (which will implement the target interface)
+3. Interface to be changed (Adpatee)
+4. Client (who only knows target interface)
+----proper definition--------
+it converts the interface of a class into another interface the clinet expects. it lets classes work together 
+that couldn't otherwise coz of incompatible interfaces
+
+
+The one discussed here is a Object Adapter pattern (since it composes the adaptee object)
+
+There is one Class Adapter pattern (but it works on multiple inheritance concept, which is not possible in java)
+here, the adapter will EXTEND target interface and adaptee both
+
+--------egs-----------(steps wala idea is mine...not tutorial point ka)
+
+1. adapter.basicEg1
+
+here, we have two classes, Duck and Turkey, and a client that uses Duck.....we have to "adapt" turkey such that, 
+client can call duck's method on it
+as per the terms..... 1 is Duck, 2 is TurkeyAdapter, 3 is Turkey, 4 is client
+
+2. real world eg (java type)
+we has Enumerations earlier (that were used to check the elements in old Collections like vector etc).
+Now we have Iterators for new collections
+
+3. nice eg from https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm
+just copy pasted it
+
+
+
+************Eg in java ( as per stack overflow not sure if its correct)
+There is one Adapter in the Java API that we all know, although it's quite hidden. You get is with a fectory method from Arrays:
+
+Arrays.asList(T... a)
+The method returns an instance of Arrays.ArrayList and this object adapts the array to the List interface.

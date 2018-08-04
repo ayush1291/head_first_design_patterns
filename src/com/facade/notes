@@ -1,0 +1,18 @@
+Basically..in one word..its a Helper kind of thing
+
+
+1. it simplifies the interface
+2. it also decouples the client from subsystem of components (Facade design pattern is used to help client applications to easily interact with the system.)
+3. it actually provides a unified interface to a set of interfaces in a subsystem. It defines a higher level 
+and makes system easy to use
+
+
+
+
+Mota mota it is ki, for eg in a Home Theater system, there are several components like TV, player, 
+remote, CDpopcorn machine, lights etc.
+You have to perform a series of actions like dim the lights, start TV, insert CD, play the CD, prepare popcorn....
+
+the main idea is that your client should not be aware of components being used...only the order of things to be done matters..
+So components should be "composed"in a interface, and its method should perform all the tasks...
+The client will call only the interface ka method, irrespective of the objects/components involved
