@@ -16,8 +16,6 @@ public class Client {
 	      dayNames.add("Sunday");
 	      dayNames.add("Monday");
 	      dayNames.add("Tuesday");
-		//uncomment n check.....
-		//callMethod(list1.iterator());  
 		
 	    System.out.println("For list1");  
 	    callMethod(list1.iterator());
