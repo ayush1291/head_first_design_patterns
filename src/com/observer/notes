@@ -1,0 +1,8 @@
+1. in step 1, we see that we have created hard dependency, we have to change the display update method and also the weather class if any new 
+	barometer is added or if any new display is added or removed
+2.
+
+
+OO Principle : we shud follow loosely coupled designs btw objects that interact
+
+DP : Defines one to many dependency btw objects so that when one object changes state, all its dependents are notified and updated auto 

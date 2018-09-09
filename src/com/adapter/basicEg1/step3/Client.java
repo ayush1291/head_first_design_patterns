@@ -19,7 +19,6 @@ public class Client {
 		System.out.println("processDuck for turkey1 via adoptedTurkey----->");
 		processDuck(adoptedTurkey);
 		
-		
 	}
 	
 	public static void processDuck(Duck duck) {
